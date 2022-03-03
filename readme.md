@@ -9,9 +9,13 @@ https://drive.google.com/file/d/1fYg4aPnVbIakujECRQJ3pmVg-qrPBg9d/view?usp=shari
 
 2. Open SDx
 select File -> Import
+
 choose Xilinx -> SDx Project, then click Next
+
 choose SDx project exported zip file, click Next
+
 select test.sdx.zip in the file Browser as Archieve File, select test and click Finish
+
 
 ## Project Overview
 In src sdx_rtl_kernel -> sdx_kernel_wizard_0, you can find host_example.cpp and sdx_kernel_wizard_0.xo
