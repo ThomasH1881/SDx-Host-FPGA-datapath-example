@@ -15,9 +15,12 @@ select test.sdx.zip in the file Browser as Archieve File, select test and click 
 
 ## Project Overview
 In src sdx_rtl_kernel -> sdx_kernel_wizard_0, you can find host_example.cpp and sdx_kernel_wizard_0.xo
+
 ### host_example.cpp
 Here host_example.cpp uses OpenCL to pass arguments to FPGA and upload binary file. You should create a binary file and fopens its directory.
+
 Four AXI pointer are created and passed to FPGA. (In this version, only weights are used. A previous version implements Output = Weights * Inputs + Bias, you can modify the interfaces in host_example.cpp and FPGA kernel to implement that.)
+
 To write to FPGA, first use fopen to open a binary file, fread it and clEnqueueWriteBuffer it to FPGA. Reading from FPGA is opposite with clEnqueueReadBuffer and fwrite.
 
 ### RTL Kernel sdx_kernel_wizard_0.xo
