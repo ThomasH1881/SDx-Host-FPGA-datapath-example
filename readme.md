@@ -39,7 +39,7 @@ You can find control logics in loader.v file.
 
 
 
-## There is also a memory latency and cycles of this reading/writing process.
+## There is also a test of memory latency and cycles of this reading/writing process.
 
 Memory test for reading 16KB features in different granularties and orders:
 
